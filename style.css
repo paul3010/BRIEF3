@@ -1,0 +1,1439 @@
+
+/* Mise en forme de la page index.html */
+
+* 
+{
+box-sizing: border-box;
+}
+
+html
+{
+font-family:Georgia, 'Times New Roman', Times, serif;
+background-color:rgba(0, 0, 0, 0.884);
+}
+
+/* partie logo avec initial F */
+
+.FM-Logo
+{
+font-style: italic;
+font-weight:lighter;
+color: aqua;
+position: relative;
+animation-name: FM;
+animation-duration: 15s;  
+animation-delay: 4s;
+animation-timing-function: ease;
+transition: 15s;
+animation-iteration-count:1;
+animation-direction: alternate;
+width: 100%;
+padding-right:7px;
+margin-right: 80px;
+}
+
+
+@keyframes FM
+{
+10% {transform: rotateY(360deg);}
+}
+
+.FM-Logo::first-letter
+{
+border-radius: 50%;
+border-left: 15px white double;
+border-right: 10px gray groove;
+color: white;
+font-size: 60px;
+font-style: italic;
+margin-left: 30px;
+padding-left:20px;
+padding-right: 15px;
+background-color: tomato;
+}
+
+/* Partie header */
+
+/* item1 */
+
+.grid-container 
+{
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto auto auto auto;
+outline: ridge 5px yellow;
+padding: 20px;
+}
+
+.item1
+{
+grid-column: 1 / span 3;
+margin-top:10px;
+}
+
+
+
+.flex-container1
+{
+display:flex;
+background-color:rgba(153, 153, 153, 0.61);
+justify-content:space-around;
+align-items:center;
+border-left:ridge brown 30px;
+border-right: ridge brown 30px;
+border-top: double 3px white;
+border-bottom: double 3px white;
+line-height:30px;
+}
+
+
+.contenu2
+{
+border-left:groove black 30px;
+border-right: groove black 30px;
+background-color: rgba(127, 255, 212, 0.717);
+width:100%;
+}
+
+.grand-titre
+{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+font-size:40px;
+text-transform:uppercase;
+word-spacing:5px;
+text-align: center;
+}
+
+.grand-titre::first-letter
+{
+color:blue;
+text-decoration:underline overline;
+letter-spacing:10px;
+font-size:50px;
+}
+
+.mot
+{
+color: black;
+text-shadow: 2px 2px 5px red;
+font-weight: lighter;
+font-style: italic;
+}
+
+.sous-titre
+{
+color:wheat;
+border-top:double white 5px;
+border-bottom:double white 5px;
+background-color:brown;
+padding:5px;
+border-left:groove 35px white;
+border-right:groove 35px white;
+text-align: center;
+}
+
+
+.contenu3
+{
+position: relative;
+width:30%;
+margin-left: 70px;
+}
+  
+.image3
+{
+display: block;
+width: 60%;
+height: auto;
+border-right: double brown 10px;
+border-radius:30%;
+background-color: white;
+}
+  
+.overlay3
+{
+position: absolute;
+bottom: 100%;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 60%;
+height: 0;
+transition: .5s ease;
+border-right: double brown 10px;
+border-radius:30%;
+background-color:black;
+}
+  
+.contenu3:hover .overlay3
+{
+bottom: 0;
+height: 100%;
+}
+  
+.img3
+{
+white-space: nowrap; 
+position: absolute;
+overflow: hidden;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+
+/* Partie barre de menu déroulante  */
+
+/* item2 */
+
+.item2
+{
+display: flex;
+justify-content:center;
+grid-column: 1 / span 3;
+width: 100%;
+margin-top:30px;
+}
+
+ul
+{
+display: flex;
+list-style-type:none;
+overflow: hidden;
+background-color:brown;
+border:double white 5px;
+border-left:ridge yellow 30px;
+border-radius:30%;
+border-right: ridge 5px yellow;
+margin:auto;
+}
+  
+
+  
+li a, .dropbtn 
+{
+display: block;
+color: white;
+text-align: center;
+padding: 10px 20px;
+text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropbtn 
+{
+background-color:black;
+border-left: 4px groove red;
+border-right: 4px groove red;
+color:yellow;
+}
+  
+
+ 
+.dropdown-content 
+{
+display: none;
+position: absolute;
+background-color:burlywood;
+z-index: 3;
+width:10%;
+}
+  
+.dropdown-content a 
+{
+color: black;
+padding: 6px 8px;
+text-decoration: none;
+display: block;
+text-align:center;
+border-bottom:2px white double;
+font-size: medium;
+}
+  
+.dropdown-content a:hover 
+{
+background-color:cadetblue;
+color:blue;
+}
+  
+.dropdown:hover .dropdown-content 
+{
+display: block;
+}
+
+
+/* item3 */
+
+/* Partie contenu */
+
+.item3
+{
+margin-top:40px;
+grid-column: 1 / span 3;
+margin-bottom:20px;
+}
+
+.titre
+{
+font-size:40px;
+color:white;
+text-shadow: 2px 2px 5px black;
+font-weight: lighter;
+text-align:left;
+width:50%;
+border-bottom: white double 5px;
+border-top: white double 5px;
+padding-left:30px;
+background-color:brown;
+border-left:ridge 5px yellow;
+border-right:ridge 5px yellow;
+}
+
+.flex-container2
+{
+display: flex;
+background-color: white;
+justify-content: space-around;
+flex-direction:row;
+height:400px;
+}
+
+
+.article1
+{
+background-color: burlywood;
+}
+
+.article2
+{
+background-color:cornsilk;
+}
+
+.article3
+{
+background-color:burlywood;
+}
+    
+
+.banner
+{
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+filter: drop-shadow(8px 8px 10px green);
+width:100%;
+}
+
+img.banner:hover
+{
+box-shadow: 0 0 10px 5px rgba(186, 0, 164, 0.5);
+}
+
+h3.information
+{
+text-align: center;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-bottom: 6px solid white;
+border-top: 6px solid white;
+border-right: groove 4px yellow;
+color: white;
+}
+
+p.information1
+{
+color:brown;
+text-align: center;
+font-weight: bold;
+}
+
+.liste li p
+{
+text-align:left;
+font-size:small;
+color:black;
+line-height:0.04;
+}
+
+/* Partie contenu suite */
+
+/* item4 */
+
+
+.item-4
+{
+margin:auto;
+grid-column: 1 / span 3;
+display: flex;
+flex-direction:column;
+justify-content:center;
+width:60%;
+}
+
+
+img.service
+{
+border-left:double 50px white;
+border-right: double 50px white;
+border-radius:10%;
+background-color: aqua;
+}
+
+.titre1
+{
+font-size:70px;
+text-shadow: 2px 2px 5px white;
+font-weight: lighter;
+margin-top:50px;
+color: aqua;
+}
+
+
+.flex-container3
+{
+display: flex;
+justify-content:space-around;
+flex-direction:row;
+width:100%;
+}
+
+h4.title
+{
+color: aqua;
+text-align: center;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-bottom: 6px solid white;
+border-top: 6px solid white;
+border-right: groove 4px yellow;
+}
+
+img.service1
+{
+width: 300px;
+height: 200px;
+border-radius:50%;
+border:solid 3px yellow;
+border-left:double 20px brown;
+}
+
+img.service2
+{
+width: 300px;
+height: 200px;
+border-radius:50%;
+border:solid 3px yellow;
+border-left:double 20px brown;
+}
+
+img.service3
+{
+width: 300px;
+height: 200px;
+border-radius:50%;
+border:solid 2px yellow;
+border-left:double 20px brown;
+}
+
+/* image en bouton pour item4 */
+
+.btn
+{
+display: inline-block;
+padding: 10px 15px;
+font-size: 18px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+outline: none;
+color: white;
+background-color:tomato;
+border: none;
+border-radius: 15px;
+box-shadow: 0px 17px #999;
+border-bottom: 5px black solid;
+transition: 5s;
+}
+
+
+.btn:active 
+{
+background-color:magenta;
+color: black;
+box-shadow: 0 1px #666;
+}
+
+.conteneur
+{
+position: relative;
+width: 100%;
+}
+  
+.conteneur img.service
+{
+width: 100%;
+height: auto;
+}
+  
+.conteneur .btn 
+{
+position: absolute;
+top: 85%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color:darkturquoise;
+cursor: pointer;
+}
+  
+.conteneur .btn:hover 
+{
+background-color: black;
+color: red;
+border: 10px groove brown;
+border-radius:100%;
+}
+
+/* Partie footer */
+
+/*item5 */
+
+.item5
+{
+grid-column: 1 / span 3;
+margin-top:60px;
+}
+
+.flex-container4
+{
+display: flex;
+justify-content:space-around;
+font-family: 'Times New Roman', Times, serif;
+border-radius:20%;
+border-left: 35px yellow double;
+border-right: 4px yellow ridge;
+border-top:solid 1px white;
+border-bottom:double 7px white;
+width:100%;
+background-color:rgba(0, 0, 0, 0.132);
+padding:0;
+}
+
+.flex-container5
+{
+display: flex;
+}
+
+.tel
+{
+font-weight: bolder;
+color: aqua;
+}
+
+.tel:hover, .email:hover
+{
+color:yellow;
+}
+
+.email
+{
+text-decoration: none;
+font-weight: bolder;
+color:aqua;
+}
+
+
+.fa-solid
+{
+color:blueviolet;
+padding-right:5px;
+}
+
+.fa-brands
+{
+padding-right:10px;
+font-size:20px;
+color:aqua;
+}
+
+
+
+/* Mise en forme de la page propos.html */
+
+.titre2
+{
+text-align: center;
+background-color:tomato;
+padding: 5px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+margin-top:60px;
+}
+
+.item3-a-a
+{
+background-color: #999;
+margin-top:20px;
+grid-column: 1 / span 3;
+display: flex;
+width:100%;
+border:double white 4px;
+border-right:ridge 5px brown;
+border-left:ridge 5px brown;
+margin-bottom:30px;
+}
+
+.profil
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+img.assistance
+{
+width:600px;
+border-right:ridge 5px brown;
+}
+
+.information
+{
+ text-align: justify;
+ padding:15px;
+ border-left: ridge 5px yellow;
+ margin-left:12px;
+}
+
+.item4-1
+{
+margin:auto;
+grid-column: 1 / span 3;
+display: flex;
+flex-direction:column;
+justify-content:center;
+width:60%;
+}
+
+
+
+
+
+
+/* La mise en forme de la page inscription.html */
+
+.item3-a
+{
+background-color: #999;
+width:40%;
+display: flex;
+justify-content:center;
+margin:auto;
+grid-column: 1 / span 3;
+border: double wheat 4px;
+margin-top:150px;
+margin-bottom:20px;
+}
+
+
+
+.inscription
+{
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+text-align: center;
+}
+
+.champ
+{
+border: double blanchedalmond 5px;
+}
+
+.label
+{
+margin-right: 60px;
+}
+.labe2
+{
+margin-right: 40px;
+}
+
+
+p.genre
+{
+text-align: center;
+}
+
+
+
+input[type=text] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=radio] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=date] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=time] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=tel] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=email] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=color] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=submit] 
+{
+width: 40%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+}
+
+input[type=reset] 
+{
+width: 40%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+margin-left: 50px;
+}
+
+
+
+/* Mise en forme de la page contact.html */
+
+
+.cadre1
+{
+
+display: flex;
+flex-direction: column;
+grid-column: 1 / span 3;
+border: ridge 15px white;
+background-color: bisque;
+margin-top:150px;
+width:100%;
+margin-bottom:30px;
+}
+
+.titre-contact
+{
+display:inline-block;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+}
+
+.label1
+{
+padding-left:30px;
+}
+
+.label2
+{
+padding-left:30px;
+}
+
+input[type=text] 
+{
+width: 25%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-left:30px;
+}
+.message
+{
+padding-left:15px ;
+}
+textarea.textarea
+{
+margin-left:40px;
+border-radius:50px;
+border:2px yellow dotted;
+width:50%;
+}
+
+
+input[type=submit] 
+{
+width: 40%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+}
+
+.submit
+{
+margin-left:110px;
+}
+
+.item4-2
+{
+margin:auto;
+grid-column: 1 / span 3;
+display: flex;
+flex-direction:column;
+justify-content:center;
+width:60%;
+margin-top:50px;
+}
+
+
+/* Mise en page depannage.html */
+
+.titre-a
+{
+margin:auto;
+color:white;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+margin-top:150px;
+}
+
+.item3-a-1
+{
+margin: auto;
+background-color: #999;
+grid-column: 1 / span 3;
+display: flex;
+justify-content: space-between;
+width:80%;
+border:double white 4px;
+border-right:ridge 5px brown;
+border-left:ridge 5px brown;
+margin-top:20px;
+margin-bottom:50px;
+}
+
+.profil
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+img.assistance
+{
+width:600px;
+border-right:ridge 5px brown;
+}
+
+.information
+{
+ text-align: justify;
+ padding:15px;
+ border-left: ridge 5px yellow;
+ margin-left:12px;
+}
+
+.item4-1
+{
+margin:auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+
+/* Mise en forme de la page telemaintenance.html */
+
+.titre-a
+{
+color:white;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+text-align: center;
+}
+
+
+.item3-a-2
+{
+margin: auto;
+background-color: #999;
+grid-column: 1 / span 3;
+display: flex;
+justify-content: space-between;
+width:80%;
+border:double white 4px;
+border-right:ridge 5px brown;
+border-left:ridge 5px brown;
+margin-top:150px;
+margin-bottom:50px;
+}
+
+.profil
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+img.assistance
+{
+width:600px;
+border-right:ridge 5px brown;
+}
+
+.information
+{
+ text-align: justify;
+ padding:15px;
+ border-left: ridge 5px yellow;
+ margin-left:12px;
+}
+
+
+/* La mise en forme de la page formation.html */
+
+.titre-a
+{
+color:white;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+text-align: center;
+}
+
+
+
+.item3-a-3
+{
+margin: auto;
+background-color: #999;
+grid-column: 1 / span 3;
+display: flex;
+justify-content: space-between;
+width:80%;
+border:double white 4px;
+border-right:ridge 5px brown;
+border-left:ridge 5px brown;
+margin-top:150px;
+margin-bottom:50px;
+}
+
+
+.profil
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+img.assistance
+{
+width:600px;
+border-right:ridge 5px brown;
+}
+
+.information
+{
+ text-align: justify;
+ padding:15px;
+ border-left: ridge 5px yellow;
+ margin-left:12px;
+}
+
+
+
+/* Partie responsive design  */
+/* Page index.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+
+
+/* item1 */
+
+.flex-container1
+{
+display: flex;
+flex-direction: column;
+margin-top:10px;
+}
+
+.grand-titre
+{
+font-size:20px;
+text-align: center;
+padding-top:10px;
+}
+
+.sous-titre
+{
+font-size: smaller;
+height:35%;
+line-height:0.8;
+padding-top:8px;
+text-align: center;
+}
+
+img.image1 
+{
+display:none;
+}
+
+img.image3 
+{
+display:none;
+}
+
+
+/* item2 */
+
+.item2
+{
+display: flex;
+flex-direction:column;
+justify-content: center;
+width:100%;
+height:90%;
+}
+
+ul, li a, .dropbtn
+{
+display:flex;
+flex-direction: column;
+width:80%;
+font-size: small;
+}
+.dropdown-content 
+{
+width:40%;
+padding:5px 7px;
+}
+
+.dropdown-content a
+{
+text-align:center;
+width:100%;
+font-size:small;
+}
+
+/* item3 */
+
+.item3 
+{
+margin-top:550px;
+width:100%;
+}
+
+.titre 
+{
+display:none
+}
+
+.flex-container2
+{
+display: flex;
+flex-direction:column;
+}
+
+
+.liste li p
+{
+line-height: normal;
+padding:6px;
+}
+
+/* item4 */
+
+.item-4
+{
+margin-top:450px;
+display: flex;
+flex-direction:column;
+justify-content:center;
+width:100%;
+}
+
+
+.btn
+{
+font-size:10px;
+}
+
+.titre1
+{
+font-size:20px;
+margin-top:60px;
+color:aqua;
+text-align: center;
+}
+
+.flex-container3
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width:100%;
+}
+
+img.service1 , img.service2 , img.service3
+{
+margin-left:100px;
+width:200px;
+height:100px;
+}
+
+
+/* item5 */
+
+.item5
+{
+width:100%;
+}
+
+.flex-container4
+{
+flex-direction: column;
+justify-content:center;
+width:100%;
+align-items: center;
+}
+
+}
+
+
+/* Partie responsive design  */
+/* Page propos.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+.titre2
+{
+display:none;
+}
+
+.item3-a-a
+{
+display: flex;
+flex-direction: column;
+width:100%;
+margin-top:130px;
+}
+
+.profil
+{
+display: flex;
+flex-direction: column;
+}
+
+img.assistance
+{
+width:300px;
+border-right:ridge 5px brown;
+}
+
+.information
+{
+text-align: justify;
+padding:15px;
+border-left: ridge 5px yellow;
+margin-left:12px;
+}
+.item4-1
+{
+width:100%;
+margin-top:20px;
+}
+
+
+}
+
+/* Partie responsive design  */
+/* Page inscription.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+
+.item3-a
+{
+display: flex;
+flex-direction: column;
+width:90%;
+}
+}
+
+/* Partie responsive design  */
+/* Page contact.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+
+
+
+.cadre1
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width:100%;
+margin-top:150px;
+height:80%;
+}
+
+.titre-contact
+{
+text-align: center;
+margin-left:70px;
+}
+
+.label1
+{
+margin-left:30px;
+}
+.label2
+{
+margin-left:30px;
+}
+
+.message
+{
+ margin-left:40px;
+}
+input[type=text] 
+{
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+width:80%;
+}
+
+.textarea.textarea{
+height: 30%;
+margin-bottom:10px;
+width:80%;
+}
+
+
+input[type=submit] 
+{
+margin-left: 100px;
+}
+
+.item4-2
+{
+margin:auto;
+grid-column: 1 / span 3;
+display: flex;
+flex-direction:column;
+justify-content:center;
+width:100%;
+}
+
+}
+
+
+/* Partie responsive design  */
+/* Page depannage.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+
+.titre-a
+{
+margin:auto;
+margin-top:120px;
+margin-right:80px;
+}
+
+.item3-a-1
+{
+display: flex;
+flex-direction:column;
+margin-top:20px;
+}
+
+.item4
+{
+margin-top:20px;
+}
+
+}
+
+/* Partie responsive design  */
+/* Page telemaintenance.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+
+.titre-a
+{
+margin-top:140px;
+margin-left: auto;
+}
+
+.item3-a-2
+{
+display: flex;
+flex-direction:column;
+margin-top:20px;
+}
+
+.item4
+{
+margin-top:20px;
+}
+
+}
+
+/* Partie responsive design  */
+/* Page formation.html */
+
+@media only screen and (max-width: 500px) 
+
+{
+/* For mobile phones: */
+
+.titre-a
+{
+font-size: small;
+margin-top:140px;
+margin-left:130px;
+}
+
+.item3-a-3
+{
+display: flex;
+flex-direction:column;
+margin-top:20px;
+}
+
+.item4
+{
+margin-top:20px;
+}
+
+}
+
